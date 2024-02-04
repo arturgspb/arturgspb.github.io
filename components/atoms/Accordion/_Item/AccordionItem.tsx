@@ -1,7 +1,6 @@
-import React, { FC, useCallback, useState } from 'react';
+import React, { FC } from 'react';
 import { IChildrenProps } from "../../../common/props";
 import { Button, IButtonProps } from "../../Button/Button";
-import { useOpen } from "../../../common/hooks/useOpen";
 
 interface IButtonOptionalExceptSalary extends Partial<IButtonProps> {
     href: string;
@@ -15,6 +14,8 @@ export interface IAccordionItemProps extends IChildrenProps {
 
 export const AccordionItem: FC<IAccordionItemProps> = (({ title, children, externalLink }) => {
     // const {isOpen, handleToggleClick} = useOpen();
+
+    const isOpen = true;
 
     const link: IButtonOptionalExceptSalary | undefined = externalLink
         ? { children: 'Перейти на сайт', target: '_blank', ...externalLink }
@@ -50,10 +51,10 @@ export const AccordionItem: FC<IAccordionItemProps> = (({ title, children, exter
                                   d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
                         </svg>
                     </button>
-                    {/*<div*/}
-                    {/*    className={isOpen ? "text-sm text-white text-site transition-all ease-in pointer-events-none opacity-1 h-0"}>*/}
-                    {/*    {children}*/}
-                    {/*</div>*/}
+                    <div
+                        className={(isOpen ? 'opacity-1' : 'opacity-0') + " text-sm text-white text-site transition-all ease-in pointer-events-none h-0"}>
+                        {children}
+                    </div>
                 </div>
             </div>
 
