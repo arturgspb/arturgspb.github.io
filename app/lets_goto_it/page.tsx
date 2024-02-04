@@ -1,4 +1,4 @@
-import { SocialLinks } from "../components/SocialLinks/SocialLinks";
+import { SocialLinks } from "../../components/SocialLinks/SocialLinks";
 
 export default function Home() {
     return (
@@ -9,7 +9,7 @@ export default function Home() {
                         <div className="basis-1/2 text-center sm:text-left relative">
                             <div className="px-10 sm:px-14 py-6 bg-site" data-testid="home.header">
                                 <h1 className="text-5xl font-bold sm:text-[120px] leading-none animate-fade-in">
-                                    Dev & QA
+                                    Уйти в IT!
                                 </h1>
                                 <h3 className="text-base sm:text-2xl py-6">
                                     c
@@ -19,18 +19,18 @@ export default function Home() {
                                 <div className="flex text-gray-700 gap-4 justify-center sm:justify-start"
                                      style={{ background: '#fff' }}>
 
-                                    <SocialLinks kind={'self'}/>
+                                    <SocialLinks kind={'lets_goto_it'} />
                                 </div>
                             </div>
                             <div className="bg-zinc-900 h-[75px] w-full"/>
                         </div>
                         <div className="basis-1/2">
                             <img
-                                alt="TALI$A" loading="lazy" width="1000" height="800"
-                                decoding="async"
-                                data-nimg="1"
-                                className="w-full px-10 sm:px-0"
-                                src="/ava.png"/>
+                            alt="TALI$A" loading="lazy" width="1000" height="800"
+                            decoding="async"
+                            data-nimg="1"
+                            className="w-full px-10 sm:px-0"
+                            src="/ava.png"/>
                         </div>
                     </div>
                 </div>

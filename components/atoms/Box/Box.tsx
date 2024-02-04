@@ -12,17 +12,17 @@ interface IBoxProps extends IRefProps, IChildrenProps {
      * Выстраивает боксы например горизонтально.
      * По умолчанию вертикально
      */
-    flexDirection: IFlexDirection;
+    flexDirection?: IFlexDirection;
 
     /**
      * Ориентация по вертикали
      */
-    alignItems: TAlignItems;
+    alignItems?: TAlignItems;
 
     /**
      * Ориентация по горизонтали
      */
-    justifyContent: TJustifyContent;
+    justifyContent?: TJustifyContent;
 }
 
 const buildCssClasses = (

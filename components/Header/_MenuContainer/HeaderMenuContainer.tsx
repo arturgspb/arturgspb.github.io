@@ -16,8 +16,9 @@ export const HeaderMenuContainer: FC<IHeaderMenuContainerProps> = ({ isOpen }) =
                 <h2 className="text-center text-2xl sm:text-[120px] z-20 sm:mt-[-150px]">TALI$A KIDD</h2>
             </div>
             <ul className="flex flex-col items-center gap-4 justify-end mt-4 sm:mt-[140px]">
-                <li className="relative"><a className="text-lg text-purple-300" href="/">HOME</a></li>
-                {/*<li className="relative"><a className="text-lg hover:text-gray-400" href="/shop">MERCH</a>*/}
+                <li className="relative"><a className="text-lg text-purple-300" href="/">Обо мне</a></li>
+                <li className="relative"><a className="text-lg text-gray-400" href="/lets_goto_it">Уйти в IT!</a></li>
+
                 <div className="flex text-white gap-4 mt-4">
 
                 </div>
