@@ -1,4 +1,5 @@
 import { SocialLinks } from "../components/SocialLinks/SocialLinks";
+import { AboutMeProjectList } from "../components/page/aboutme/ProjectList/ProjectList";
 
 export default function Home() {
     return (
@@ -34,6 +35,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
+                <AboutMeProjectList />
             </div>
         </main>
     );
