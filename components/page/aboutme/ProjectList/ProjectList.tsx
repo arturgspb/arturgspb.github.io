@@ -13,7 +13,19 @@ export const AboutMeProjectList = () => {
             children: <>
                 <p>Desc 0</p>
                 <p>Desc 1</p>
-                <p className="mt-3">Desc 3</p>
+                {/*<p className="mt-3">Desc 3</p>*/}
+            </>
+        },
+        {
+            id: 'devision2',
+            title: 'Devision',
+            externalLink: {
+                href: 'https://devision.io',
+            },
+            children: <>
+                <p>Desc 0</p>
+                <p>Desc 1</p>
+                {/*<p className="mt-3">Desc 3</p>*/}
             </>
         }
     ];

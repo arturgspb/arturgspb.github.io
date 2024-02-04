@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, useCallback, useState } from 'react';
 import { IChildrenProps } from "../../../common/props";
 import { Button, IButtonProps } from "../../Button/Button";
+import { useOpen } from "../../../common/hooks/useOpen";
 
 interface IButtonOptionalExceptSalary extends Partial<IButtonProps> {
     href: string;
@@ -13,6 +14,8 @@ export interface IAccordionItemProps extends IChildrenProps {
 }
 
 export const AccordionItem: FC<IAccordionItemProps> = (({ title, children, externalLink }) => {
+    // const {isOpen, handleToggleClick} = useOpen();
+
     const link: IButtonOptionalExceptSalary | undefined = externalLink
         ? { children: 'Перейти на сайт', target: '_blank', ...externalLink }
         : undefined;
@@ -36,7 +39,8 @@ export const AccordionItem: FC<IAccordionItemProps> = (({ title, children, exter
                 {/*    </div>*/}
                 {/*</div>*/}
                 <div className="grow flex flex-col hover:text-purple-500">
-                    <button className="text-left text-white w-full h-full group/button text-2xl text-left">
+                    <button className="text-left text-white w-full h-full group/button text-2xl text-left"
+                    >
                         {title}
                         <svg fill="none"
                              className="w-4 h-4 inline ml-3 opacity-0 group-hover/button:opacity-100 "
@@ -46,10 +50,10 @@ export const AccordionItem: FC<IAccordionItemProps> = (({ title, children, exter
                                   d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
                         </svg>
                     </button>
-                    <div
-                        className="text-sm text-white text-site transition-all ease-in pointer-events-none opacity-1 h-0">
-                        {children}
-                    </div>
+                    {/*<div*/}
+                    {/*    className={isOpen ? "text-sm text-white text-site transition-all ease-in pointer-events-none opacity-1 h-0"}>*/}
+                    {/*    {children}*/}
+                    {/*</div>*/}
                 </div>
             </div>
 
