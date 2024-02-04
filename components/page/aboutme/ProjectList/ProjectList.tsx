@@ -13,7 +13,7 @@ export const AboutMeProjectList = () => {
             children: <>
                 <p>Desc 0</p>
                 <p>Desc 1</p>
-                {/*<p className="mt-3">Desc 3</p>*/}
+                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
             </>
         },
         {
@@ -25,7 +25,7 @@ export const AboutMeProjectList = () => {
             children: <>
                 <p>Desc 0</p>
                 <p>Desc 1</p>
-                {/*<p className="mt-3">Desc 3</p>*/}
+                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
             </>
         }
     ];

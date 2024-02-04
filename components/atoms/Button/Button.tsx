@@ -7,7 +7,7 @@ import { buildCssClasses } from "../../common/classesUtils";
 type TButtonView = 'main';
 
 export interface IButtonProps extends IRefProps, IChildrenProps {
-    view: TButtonView;
+    view?: TButtonView;
     href: string;
     target?: HTMLAttributeAnchorTarget | undefined;
 }

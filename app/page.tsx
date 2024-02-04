@@ -10,7 +10,9 @@ export default function Home() {
                         <div className="basis-1/2 text-center sm:text-left relative">
                             <div className="px-10 sm:px-14 py-6 bg-site" data-testid="home.header">
                                 <h1 className="text-5xl font-bold sm:text-[120px] leading-none animate-fade-in">
-                                    Dev & QA
+                                    Dev<br />
+                                    QA<br />
+                                    DevOps
                                 </h1>
                                 <h3 className="text-base sm:text-2xl py-6">
                                     c
