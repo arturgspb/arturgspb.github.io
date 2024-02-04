@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import { IChildrenProps, IRefProps } from "../../common/props";
 import styled from './Box.module.scss'
+import { buildCssClasses } from "../../common/classesUtils";
 
 type IFlexDirection = 'row' | 'column';
 type TAlignItems = 'start' | 'center' | 'end';
@@ -25,27 +26,6 @@ interface IBoxProps extends IRefProps, IChildrenProps {
     justifyContent?: TJustifyContent;
 }
 
-const buildCssClasses = (
-    styled: { [x: string]: string },
-    classPostfix: { [prefix: string]: string | undefined },
-    additionalClassName?: string,
-    autoAddRootClass: boolean = true,
-) => {
-    const classes = []
-    if (autoAddRootClass && styled.root) {
-        classes.push(styled.root);
-    }
-
-    const genClasses = Object.entries(classPostfix).map(([key, value]) => {
-        if (typeof value === 'string') {
-            return styled[`${key}_${value}`];
-        }
-    }).filter((c) => c);
-
-    classes.push(...genClasses);
-
-    return classes.join(' ');
-}
 
 export const Box = forwardRef<HTMLDivElement, IBoxProps>(({
                                                               flexDirection = 'column',
