@@ -1,3 +1,5 @@
+import { Button } from "../../../atoms/Button/Button";
+
 export const AboutMeProjectList = () => {
     return (
         <div className={'bg-zinc-900 text-site pt-16 sm:p-20'}>
@@ -53,9 +55,9 @@ export const AboutMeProjectList = () => {
                                 </div>
                             </div>
                         </div>
-                        <a data-testid="ticket-item.select.cta"
-                           className="btn-main my-2 sm:my-10 rounded-2xl w-full text-center sm:w-auto h-fit min-w-fit"
-                           href="/events/chicago">Buy Tickets</a>
+                        <Button href={'/'} target={'_blank'}>
+                            Перейти на сайт
+                        </Button>
                     </div>
                 </div>
             </div>

@@ -17,8 +17,11 @@ export const buildCssClasses = (
             return styled[`${key}_${value}`];
         }
     }).filter((c) => c);
-
     classes.push(...genClasses);
+
+    if (additionalClassName) {
+        classes.push(additionalClassName);
+    }
 
     return classes.join(' ');
 }

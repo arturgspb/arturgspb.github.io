@@ -34,7 +34,6 @@ export const Box = forwardRef<HTMLDivElement, IBoxProps>(({
                                                               ref,
                                                               children
                                                           }) => {
-
     const classNames = buildCssClasses(styled, {
         flexDirection,
         alignItems,
