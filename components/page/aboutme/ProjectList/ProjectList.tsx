@@ -25,11 +25,11 @@ export const AboutMeProjectList = () => {
             </>
         },
         {
-            id: 'garpun_generator',
+            id: 'garpun_feeds',
             title: 'Garpun Feeds',
             subtitle: 'ETL cервис по типу "откуда угодно куда угодно"',
             externalLink: {
-                href: 'https://garpun.com/generator',
+                href: 'https://garpun.com',
             },
             children: <>
                 <p>Desc 0</p>
@@ -41,7 +41,7 @@ export const AboutMeProjectList = () => {
         {
             id: 'garpun_generator',
             title: 'Garpun Generator',
-            subtitle: 'генератор рекламных компаний для Яндекс Директ и Google Ads из xml/json фидов',
+            subtitle: 'Генератор рекламных компаний для Яндекс Директ и Google Ads из xml/json фидов',
             externalLink: {
                 href: 'https://garpun.com/generator',
             },
