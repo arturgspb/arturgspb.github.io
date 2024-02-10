@@ -1,5 +1,8 @@
 import { SocialLinks } from "../components/SocialLinks/SocialLinks";
 import { AboutMeProjectList } from "../components/page/aboutme/ProjectList/ProjectList";
+import { Text } from "../components/atoms/Text/Text";
+import { Box } from "../components/atoms/Box/Box";
+import React from "react";
 
 export default function Home() {
     return (
@@ -10,8 +13,8 @@ export default function Home() {
                         <div className="basis-1/2 text-center sm:text-left relative">
                             <div className="px-10 sm:px-14 py-6 bg-site" data-testid="home.header">
                                 <h1 className="text-5xl font-bold sm:text-[120px] leading-none animate-fade-in">
-                                    Dev<br />
-                                    QA<br />
+                                    Dev<br/>
+                                    QA<br/>
                                     DevOps
                                 </h1>
                                 <h3 className="text-base sm:text-2xl py-6">
@@ -38,7 +41,55 @@ export default function Home() {
                     </div>
                 </div>
 
-                <AboutMeProjectList />
+                <div className={'bg-zinc-900 text-site pt-16 sm:p-20'}>
+                    <div className="mb-8 px-8 sm:px-0 max-w-4xl mx-auto">
+                        <Box flexDirection={'row'} justifyContent={'spaceBetween'}>
+                            <Box>
+                                <iframe width="373" height="210"
+                                        src="https://www.youtube.com/embed/bgLSn23g768?si=5wBTUhEa3QHUQMzP"
+                                        title="YouTube video player" frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen></iframe>
+                            </Box>
+
+                            <Box>
+                                <iframe width="373" height="210"
+                                        src="https://www.youtube.com/embed/8y_BFAIkvZk?si=l6cdrxQdUu1zfw7N"
+                                        title="YouTube video player" frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen></iframe>
+                            </Box>
+                        </Box>
+                    </div>
+                </div>
+
+                <div className={'flex gap-2 sm:gap-14 px-14 flex-col'}>
+                    <div className="pt-20 mb-20 px-8 sm:px-0 max-w-4xl mx-auto">
+                        <h1 className="uppercase font-bold text-black text-4xl sm:text-7xl text-center sm:text-left">Обо мне</h1>
+
+                        <Text className={'my-2'}>С 2009 года прошел путь от разработчика, через архитектора/
+                            техлида до руководства всей
+                            it-частью технологической компании, включающей разработку и эксплуатацию. В команде
+                            разработчики, qa, саппорт и devops-ы. Кроме этого взаимодействую с аутсорс-ресурсами.
+                            Управляю затратами на IT-инфраструктуру (capex/opex).</Text>
+                        <Text className={'my-2'}>Есть обширный опыт в разработке и поддержке систем
+                            генерации и управления рекламой (работа с
+                            шадрированным и партицированным Postgres на несколько TB), ETL системами для перегрузки
+                            данных (много сотни GB в сутки), CRM (почти ERP).</Text>
+                        <Text className={'my-2'}>Программирование люблю, при этом считаю своей точкой роста
+                            именно управление. Из направлений
+                            в разработке особенно нравится инфраструктура.</Text>
+                    </div>
+                </div>
+
+                <div className={'bg-zinc-900 text-site pt-16 sm:p-20'}>
+                    <div className="mb-8 px-8 sm:px-0 max-w-4xl mx-auto">
+                        <h1 className="uppercase font-bold text-white text-4xl sm:text-7xl text-center sm:text-left">Проекты</h1>
+                        <Text color={'white'}>Это часть проектов, над которыми я работал в последнее время</Text>
+
+                        <AboutMeProjectList/>
+                    </div>
+                </div>
             </div>
         </main>
     );

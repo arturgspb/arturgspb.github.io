@@ -5,6 +5,7 @@ import { IChildrenProps } from "../../../common/props";
 import { Button, IButtonProps } from "../../Button/Button";
 import { useOpen } from "../../../common/hooks/useOpen";
 import ArrowDown from './_assets/arrow-down.svg'
+import { Text } from "../../Text/Text";
 
 interface IButtonOptionalExceptSalary extends Partial<IButtonProps> {
     href: string;
@@ -13,10 +14,11 @@ interface IButtonOptionalExceptSalary extends Partial<IButtonProps> {
 export interface IAccordionItemProps extends IChildrenProps {
     id: string;
     title: string;
+    subtitle: string;
     externalLink?: IButtonOptionalExceptSalary
 }
 
-export const AccordionItem: FC<IAccordionItemProps> = (({ title, children, externalLink }) => {
+export const AccordionItem: FC<IAccordionItemProps> = (({ title, subtitle, children, externalLink }) => {
     const {isOpen, handleToggleClick} = useOpen();
 
     const link: IButtonOptionalExceptSalary | undefined = externalLink
@@ -35,6 +37,9 @@ export const AccordionItem: FC<IAccordionItemProps> = (({ title, children, exter
                         {title}
                         <ArrowDown className="w-4 h-4 inline ml-3 opacity-0 group-hover/button:opacity-100 " />
                     </button>
+                    <div>
+                        <Text color={'white'} size={'base'}>{subtitle}</Text>
+                    </div>
                     <div
                         className={(isOpen ? 'opacity-100 h-auto py-3' : 'opacity-0 h-0') + " text-sm text-white text-site transition-all ease-in pointer-events-none"}>
                         {children}

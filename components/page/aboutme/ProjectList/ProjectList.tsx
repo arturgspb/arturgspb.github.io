@@ -3,38 +3,59 @@ import { IAccordionItemProps } from "../../../atoms/Accordion/_Item/AccordionIte
 import React from "react";
 
 export const AboutMeProjectList = () => {
+    /**
+     * b2b маркетплейс рекламных площадок
+     * b2b ETL cервис по типу "откуда угодно куда угодно"
+     * b2b генератор рекламных компаний для Яндекс Директ и Google Ads из xml/json фидов
+     * внутренний портал для Realweb
+     */
     const projectItems: IAccordionItemProps[] = [
         {
             id: 'centra',
             title: 'Centra',
+            subtitle: 'b2b маркетплейс рекламных площадок',
             externalLink: {
                 href: 'https://centra.ai',
             },
             children: <>
                 <p>Desc 0</p>
                 <p>Desc 1</p>
-                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
+                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
+                    3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
             </>
         },
         {
-            id: 'devision2',
-            title: 'Devision',
+            id: 'garpun_generator',
+            title: 'Garpun Feeds',
+            subtitle: 'ETL cервис по типу "откуда угодно куда угодно"',
             externalLink: {
-                href: 'https://devision.io',
+                href: 'https://garpun.com/generator',
             },
             children: <>
                 <p>Desc 0</p>
                 <p>Desc 1</p>
-                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
+                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
+                    3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
+            </>
+        },
+        {
+            id: 'garpun_generator',
+            title: 'Garpun Generator',
+            subtitle: 'генератор рекламных компаний для Яндекс Директ и Google Ads из xml/json фидов',
+            externalLink: {
+                href: 'https://garpun.com/generator',
+            },
+            children: <>
+                <p>Desc 0</p>
+                <p>Desc 1</p>
+                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
+                    3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
             </>
         }
     ];
     return (
-        <div className={'bg-zinc-900 text-site pt-16 sm:p-20'}>
-            <div className="px-8 sm:px-0 max-w-4xl mx-auto">
-                <h1 className="uppercase font-bold text-white text-4xl sm:text-7xl text-center sm:text-left">Проекты</h1>
-                <Accordion items={projectItems}/>
-            </div>
-        </div>
+        <>
+            <Accordion items={projectItems}/>
+        </>
     )
 }
