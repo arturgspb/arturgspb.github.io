@@ -30,7 +30,6 @@ export default function Home() {
                                     <SocialLinks kind={'self'}/>
                                 </div>
                             </div>
-                            {/*<div className="bg-zinc-900 h-[75px] w-full"/>*/}
                         </div>
                         <div className="basis-1/2 pr-14 pt-8">
                             <img
@@ -60,23 +59,6 @@ export default function Home() {
                                       target={'_blank'}>YouTube</Link>
                             </Text>
                         </Box>
-                        {/*<Box flexDirection={'row'} justifyContent={'spaceBetween'}>*/}
-                        {/*    <Box>*/}
-                        {/*        <iframe width="373" height="210"*/}
-                        {/*                src="https://www.youtube.com/embed/bgLSn23g768?si=5wBTUhEa3QHUQMzP"*/}
-                        {/*                title="YouTube video player" frameBorder="0"*/}
-                        {/*                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
-                        {/*                allowFullScreen></iframe>*/}
-                        {/*    </Box>*/}
-
-                        {/*    <Box>*/}
-                        {/*        <iframe width="373" height="210"*/}
-                        {/*                src="https://www.youtube.com/embed/8y_BFAIkvZk?si=l6cdrxQdUu1zfw7N"*/}
-                        {/*                title="YouTube video player" frameBorder="0"*/}
-                        {/*                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
-                        {/*                allowFullScreen></iframe>*/}
-                        {/*    </Box>*/}
-                        {/*</Box>*/}
                     </div>
                 </div>
 
@@ -85,60 +67,53 @@ export default function Home() {
                         <h1 className="uppercase mb-4 font-bold text-black text-4xl sm:text-7xl text-center sm:text-left">Обо
                             мне</h1>
 
-                        {/*<Text className={'my-2'}>*/}
-                        {/*    Руководитель направления разработки в Centra.*/}
-                        {/*</Text>*/}
-                        {/*<Text className={'my-2'}>*/}
-                        {/*    Автор канала Уйти в IT!:&nbsp;*/}
-
-                        {/*    <Link className={'text-purple-500'} href={'https://t.me/lets_goto_it'}*/}
-                        {/*          target={'_blank'}>Телеграм</Link>,&nbsp;*/}
-                        {/*    <Link className={'text-purple-500'} href={'https://dzen.ru/lets_goto_it'}*/}
-                        {/*          target={'_blank'}>Дзен</Link>,&nbsp;*/}
-                        {/*    <Link className={'text-purple-500'} href={'https://www.youtube.com/@lets_goto_it'}*/}
-                        {/*          target={'_blank'}>YouTube</Link>*/}
-                        {/*</Text>*/}
-
-                        {/*<Text>&nbsp;</Text>*/}
-
-                        <Text className={'my-3'}>
-                            С 2009 года прошел путь от разработчика, через техлида до руководителя направления
+                        <Text className={'my-5'}>
+                            С 2009 года прошел путь от фулстек разработчика, через техлида до руководителя направления
                             разработки.
                         </Text>
 
-                        <Text className={'my-3'}>
-                            Как разработчик выполнял проекты с нуля, работал с легаси, распиливал монолиты на
-                            микросервисы и сервисы.
+                        <Text className={'my-5'}>
+                            <b>Как разработчик</b> начинал с PHP + MySQL + Vanilla js и выполнял проекты с нуля, а также подключался к уже готовым проектам
+                            разной степени зрелости.
+                            Застал появление и внедрял в проекты jQuery, потом AngularJS, а потом переписывал React.
+                            Дважды переводил проекты с MySQL на PostgreSQL, распиливал PHP монолит на сервисы Java/Python.
+                            Застал рождение gRPC как технологии и переводил сервисы на него.
+                            Застал бум на Agile и понимаю, чем он хорош, а чем плох для разных типов проектов.
                             Учавствовал в процессе найма в существующие команды.
                         </Text>
 
-                        <Text className={'my-3'}>
-                            Как руководитель полностью собрал команду и наладил процессы разработки.
-                            Внедрил процессы декомпозиции и оценки задач, ci/cd, testops, codereview и design review.
+                        <Text className={'my-5'}>
+                            <b>Как руководитель</b> полностью собрал команду (backend, frontend, qa) и наладил процессы планирования, разработки, отладки, тестирования и доставки релизов.
+                            Процесс разработки включает в себя: декомпозицию и оценку задач, ci/cd, code review, design review, авто-тесты на selenium и ручные тесты силами QA инженеров.
                         </Text>
 
-                        <Text className={'my-3'}>
-                            Имею обширный опыт разработки под рекламный рынок -
-                            генерация и управление рекламой (работа с отечественными и зарубежными системами через API),
-                            разрабатывал ETL системы для скачивания статистики и хранения больших данных в ClickHouse и
-                            Google BigQuery.
-                        </Text>
-
-                        <Text className={'my-3'}>
+                        <Text className={'my-5'}>
+                            <b>Менеджмент команды.&nbsp;</b>
                             В работе с командой использую менторинг, мотивационные мероприятия,
                             one2one-ы, дейли/планерки, ректроспективы, ИПР-ы, codereview, и пр.
                             Неплохо расставляю приоритеты, защищая не только бизнес от ненужного рефакторинга, но и
                             команду он бесконечно нарастающего техдолга.
                         </Text>
 
-                        <Text className={'my-3'}>
+                        <Text className={'my-5'}>
+                            <b>Бизнес направленность.&nbsp;</b>
                             В работе придерживаюсь стиля управления мягкой силой, при этом публично продвигая в команде
-                            идеи,
-                            что бизнес платит деньги не столько за код как таковой, а скорее
+                            идеи, что бизнес платит деньги не столько за код как таковой, а скорее
                             за возможности, которые он получает за счет отдела разработки. Например: гибкость,
                             скорость внедрений, ориентация на результат.
 
                             Испытываю особую симпатию к инфраструктурному и платформенному направлению работы.
+                        </Text>
+
+
+                        <Text className={'my-5'}>
+                            <b>Реклама и большие данные.&nbsp;</b>
+                            Имею обширный опыт разработки под рекламный рынок:
+                            <ul className={'list-disc list-inside'}>
+                                <li className={'my-1'}>Генерация рекламных объявлений на основе xml/json товарного фида клиента и управление рекламой через API. Работал как с отечественными площадками (Яндекс.Директ, ВКонтакте/VK), так и зарубежными системами (Google Ads и другие крупные). В рамках этого проекта реализовал механизм шардинга PostgreSQL на БД ~1.5TB на несколько серверов + посхемное разбиение, что позволило на порядки ускорить работу сервиса.</li>
+                                <li className={'my-1'}>Разрабатывал ETL систему для скачивания статистики и хранения больших данных в ClickHouse и
+                                    Google BigQuery, а также загрузки статистики о транзакциях в аналитические системы типа Яндекс.Метрика или Google Analytics или в базу данных клиента. В рамках этого проекта построил распределенную систему очередей и вместе с командой удалось построить дешевый по потреблению памяти внутренний фреймворк, который позволял гонять много сотен гигабайт в сутки не сильно нагружая CPU.</li>
+                            </ul>
                         </Text>
                     </div>
                 </div>
