@@ -31,7 +31,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="basis-1/2 pr-14 pt-8">
+                        <div className="basis-1/2 sm:pr-14 pt-8">
                             <img
                                 loading="lazy" width="500" height="400"
                                 decoding="async"
@@ -45,10 +45,10 @@ export default function Home() {
                 <div className={'bg-zinc-900 text-site p-8 sm:p-20'}>
                     <div className="max-w-4xl mx-auto">
                         <Box>
-                            <Text className={'my-2'} color={'white'}>
+                            <Text className={'my-2'} color={'white'} align={'center'}>
                                 Руководитель направления разработки в Centra.
                             </Text>
-                            <Text className={'my-2'} color={'white'}>
+                            <Text className={'my-2'} color={'white'} align={'center'}>
                                 Автор канала Уйти в IT:&nbsp;
 
                                 <Link className={'text-purple-500'} href={'https://t.me/lets_goto_it'}
