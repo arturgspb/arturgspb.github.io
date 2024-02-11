@@ -10,7 +10,9 @@ export default function Home() {
         <main className="bg-site min-h-[600px]">
             <div className="mx-auto relative">
                 <div className="relative">
-                    <div className="flex sm:flex-row flex-col bg-zinc-900">
+                    <div style={{ maxWidth: 1400, margin: '0 auto', background: '#fff', paddingBottom: '50px' }}
+                         className="flex sm:flex-row flex-col bg-zinc-900"
+                    >
                         <div className="basis-1/2 text-center sm:text-left relative">
                             <div className="px-10 sm:px-14 py-6 bg-site" data-testid="home.header">
                                 <h1 className="text-5xl font-bold sm:text-[120px] leading-none animate-fade-in">
@@ -25,15 +27,14 @@ export default function Home() {
                                 </h3>
                                 <div className="flex text-gray-700 gap-4 justify-center sm:justify-start"
                                      style={{ background: '#fff' }}>
-
                                     <SocialLinks kind={'self'}/>
                                 </div>
                             </div>
-                            <div className="bg-zinc-900 h-[75px] w-full"/>
+                            {/*<div className="bg-zinc-900 h-[75px] w-full"/>*/}
                         </div>
-                        <div className="basis-1/2">
+                        <div className="basis-1/2 pr-14 pt-8">
                             <img
-                                loading="lazy" width="1000" height="800"
+                                loading="lazy" width="500" height="400"
                                 decoding="async"
                                 data-nimg="1"
                                 className="w-full px-10 sm:px-0"
@@ -86,11 +87,13 @@ export default function Home() {
                         <Text>&nbsp;</Text>
 
                         <Text className={'my-3'}>
-                            С 2009 года прошел путь от разработчика, через техлида до руководителя направления разработки.
+                            С 2009 года прошел путь от разработчика, через техлида до руководителя направления
+                            разработки.
                         </Text>
 
                         <Text className={'my-3'}>
-                            Как разработчик выполнял проекты с нуля, работал с легаси, распиливал монолиты на микросервисы и сервисы.
+                            Как разработчик выполнял проекты с нуля, работал с легаси, распиливал монолиты на
+                            микросервисы и сервисы.
                             Учавствовал в процессе найма в существующие команды.
                         </Text>
 
@@ -102,7 +105,8 @@ export default function Home() {
                         <Text className={'my-3'}>
                             Имею обширный опыт разработки под рекламный рынок -
                             генерация и управление рекламой (работа с отечественными и зарубежными системами через API),
-                            разрабатывал ETL системы для скачивания статистики и хранения больших данных в ClickHouse и Google BigQuery.
+                            разрабатывал ETL системы для скачивания статистики и хранения больших данных в ClickHouse и
+                            Google BigQuery.
                         </Text>
 
                         <Text className={'my-3'}>
@@ -113,7 +117,8 @@ export default function Home() {
                         </Text>
 
                         <Text className={'my-3'}>
-                            В работе придерживаюсь стиля управления мягкой силой, при этом публично продвигая в команде идеи,
+                            В работе придерживаюсь стиля управления мягкой силой, при этом публично продвигая в команде
+                            идеи,
                             что бизнес платит деньги не столько за код как таковой, а скорее
                             за возможности, которые он получает за счет отдела разработки. Например: гибкость,
                             скорость внедрений, ориентация на результат.
