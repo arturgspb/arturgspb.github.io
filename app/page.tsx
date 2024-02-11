@@ -43,25 +43,40 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className={'bg-zinc-900 text-site pt-16 sm:p-20'}>
-                    <div className="mb-8 px-8 sm:px-0 max-w-4xl mx-auto">
-                        <Box flexDirection={'row'} justifyContent={'spaceBetween'}>
-                            <Box>
-                                <iframe width="373" height="210"
-                                        src="https://www.youtube.com/embed/bgLSn23g768?si=5wBTUhEa3QHUQMzP"
-                                        title="YouTube video player" frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullScreen></iframe>
-                            </Box>
+                <div className={'bg-zinc-900 text-site p-8 sm:p-20'}>
+                    <div className="max-w-4xl mx-auto">
+                        <Box>
+                            <Text className={'my-2'} color={'white'}>
+                                Руководитель направления разработки в Centra.
+                            </Text>
+                            <Text className={'my-2'} color={'white'}>
+                                Автор канала Уйти в IT:&nbsp;
 
-                            <Box>
-                                <iframe width="373" height="210"
-                                        src="https://www.youtube.com/embed/8y_BFAIkvZk?si=l6cdrxQdUu1zfw7N"
-                                        title="YouTube video player" frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullScreen></iframe>
-                            </Box>
+                                <Link className={'text-purple-500'} href={'https://t.me/lets_goto_it'}
+                                      target={'_blank'}>Телеграм</Link>,&nbsp;
+                                <Link className={'text-purple-500'} href={'https://dzen.ru/lets_goto_it'}
+                                      target={'_blank'}>Дзен</Link>,&nbsp;
+                                <Link className={'text-purple-500'} href={'https://www.youtube.com/@lets_goto_it'}
+                                      target={'_blank'}>YouTube</Link>
+                            </Text>
                         </Box>
+                        {/*<Box flexDirection={'row'} justifyContent={'spaceBetween'}>*/}
+                        {/*    <Box>*/}
+                        {/*        <iframe width="373" height="210"*/}
+                        {/*                src="https://www.youtube.com/embed/bgLSn23g768?si=5wBTUhEa3QHUQMzP"*/}
+                        {/*                title="YouTube video player" frameBorder="0"*/}
+                        {/*                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
+                        {/*                allowFullScreen></iframe>*/}
+                        {/*    </Box>*/}
+
+                        {/*    <Box>*/}
+                        {/*        <iframe width="373" height="210"*/}
+                        {/*                src="https://www.youtube.com/embed/8y_BFAIkvZk?si=l6cdrxQdUu1zfw7N"*/}
+                        {/*                title="YouTube video player" frameBorder="0"*/}
+                        {/*                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
+                        {/*                allowFullScreen></iframe>*/}
+                        {/*    </Box>*/}
+                        {/*</Box>*/}
                     </div>
                 </div>
 
@@ -70,21 +85,21 @@ export default function Home() {
                         <h1 className="uppercase mb-4 font-bold text-black text-4xl sm:text-7xl text-center sm:text-left">Обо
                             мне</h1>
 
-                        <Text className={'my-2'}>
-                            Руководитель направления разработки в Centra.
-                        </Text>
-                        <Text className={'my-2'}>
-                            Автор канала Уйти в IT!:&nbsp;
+                        {/*<Text className={'my-2'}>*/}
+                        {/*    Руководитель направления разработки в Centra.*/}
+                        {/*</Text>*/}
+                        {/*<Text className={'my-2'}>*/}
+                        {/*    Автор канала Уйти в IT!:&nbsp;*/}
 
-                            <Link className={'text-purple-500'} href={'https://t.me/lets_goto_it'}
-                                  target={'_blank'}>Телеграм</Link>,&nbsp;
-                            <Link className={'text-purple-500'} href={'https://dzen.ru/lets_goto_it'}
-                                  target={'_blank'}>Дзен</Link>,&nbsp;
-                            <Link className={'text-purple-500'} href={'https://www.youtube.com/@lets_goto_it'}
-                                  target={'_blank'}>YouTube</Link>
-                        </Text>
+                        {/*    <Link className={'text-purple-500'} href={'https://t.me/lets_goto_it'}*/}
+                        {/*          target={'_blank'}>Телеграм</Link>,&nbsp;*/}
+                        {/*    <Link className={'text-purple-500'} href={'https://dzen.ru/lets_goto_it'}*/}
+                        {/*          target={'_blank'}>Дзен</Link>,&nbsp;*/}
+                        {/*    <Link className={'text-purple-500'} href={'https://www.youtube.com/@lets_goto_it'}*/}
+                        {/*          target={'_blank'}>YouTube</Link>*/}
+                        {/*</Text>*/}
 
-                        <Text>&nbsp;</Text>
+                        {/*<Text>&nbsp;</Text>*/}
 
                         <Text className={'my-3'}>
                             С 2009 года прошел путь от разработчика, через техлида до руководителя направления
