@@ -35,15 +35,15 @@ export const AccordionItem: FC<IAccordionItemProps> = (({ title, subtitle, child
                             onClick={handleToggleClick}
                     >
                         {title}
-                        <ArrowDown className="w-4 h-4 inline ml-3 opacity-0 group-hover/button:opacity-100 " />
+                        {children && <ArrowDown className="w-4 h-4 inline ml-3 opacity-0 group-hover/button:opacity-100 " />}
                     </button>
                     <div>
                         <Text color={'white'} size={'base'}>{subtitle}</Text>
                     </div>
-                    <div
+                    {children && <div
                         className={(isOpen ? 'opacity-100 h-auto py-3' : 'opacity-0 h-0') + " text-sm text-white text-site transition-all ease-in pointer-events-none"}>
                         {children}
-                    </div>
+                    </div>}
                 </div>
             </div>
 

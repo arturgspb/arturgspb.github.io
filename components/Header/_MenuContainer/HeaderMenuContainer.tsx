@@ -13,7 +13,7 @@ export const HeaderMenuContainer: FC<IHeaderMenuContainerProps> = ({ isOpen }) =
                 <div className="h-[180px] w-[140px] overflow-hidden sm:h-auto sm:w-auto mx-auto">
 
                 </div>
-                <h2 className="text-center text-2xl sm:text-[120px] z-20 sm:mt-[-150px]">TALI$A KIDD</h2>
+                <h2 className="text-center text-2xl sm:text-[120px] z-20 sm:mt-[-150px]">Артур Геращенко</h2>
             </div>
             <ul className="flex flex-col items-center gap-4 justify-end mt-4 sm:mt-[140px]">
                 <li className="relative"><a className="text-lg text-purple-300" href="/">Обо мне</a></li>

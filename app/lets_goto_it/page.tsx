@@ -26,7 +26,7 @@ export default function Home() {
                         </div>
                         <div className="basis-1/2">
                             <img
-                            alt="TALI$A" loading="lazy" width="1000" height="800"
+                            loading="lazy" width="1000" height="800"
                             decoding="async"
                             data-nimg="1"
                             className="w-full px-10 sm:px-0"

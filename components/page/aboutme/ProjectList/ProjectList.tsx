@@ -17,12 +17,12 @@ export const AboutMeProjectList = () => {
             externalLink: {
                 href: 'https://centra.ai',
             },
-            children: <>
-                <p>Desc 0</p>
-                <p>Desc 1</p>
-                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
-                    3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
-            </>
+            // children: <>
+            //     <p>Desc 0</p>
+            //     <p>Desc 1</p>
+            //     <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
+            //         3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
+            // </>
         },
         {
             id: 'garpun_feeds',
@@ -31,12 +31,12 @@ export const AboutMeProjectList = () => {
             externalLink: {
                 href: 'https://garpun.com',
             },
-            children: <>
-                <p>Desc 0</p>
-                <p>Desc 1</p>
-                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
-                    3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
-            </>
+            // children: <>
+            //     <p>Desc 0</p>
+            //     <p>Desc 1</p>
+            //     <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
+            //         3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
+            // </>
         },
         {
             id: 'garpun_generator',
@@ -45,12 +45,12 @@ export const AboutMeProjectList = () => {
             externalLink: {
                 href: 'https://garpun.com/generator',
             },
-            children: <>
-                <p>Desc 0</p>
-                <p>Desc 1</p>
-                <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
-                    3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
-            </>
+            // children: <>
+            //     <p>Desc 0</p>
+            //     <p>Desc 1</p>
+            //     <p className="mt-3">Desc 3 Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc
+            //         3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3Desc 3</p>
+            // </>
         }
     ];
     return (
