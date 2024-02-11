@@ -161,9 +161,9 @@ export default function Home() {
 
                         <Text align={'center'}>
                             Пишите мне в{' '}
-                            <Link href={'https://t.me/arturgspb'} target={'_blank'}>Телеграм</Link>{' '}
+                            <Link className={'text-purple-500'} href={'https://t.me/arturgspb'} target={'_blank'}>Телеграм</Link>{' '}
                             или на почту{' '}
-                            <Link href={'mailto:arturgspb@gmail.com'} target={'_blank'}>arturgspb@gmail.com</Link>
+                            <Link className={'text-purple-500'} href={'mailto:arturgspb@gmail.com'} target={'_blank'}>arturgspb@gmail.com</Link>
                         </Text>
                     </div>
                 </div>
