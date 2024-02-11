@@ -1,7 +1,6 @@
 import { SocialLinks } from "../components/SocialLinks/SocialLinks";
 import { AboutMeProjectList } from "../components/page/aboutme/ProjectList/ProjectList";
 import { Text } from "../components/atoms/Text/Text";
-import { Box } from "../components/atoms/Box/Box";
 import React from "react";
 import Link from "next/link";
 
