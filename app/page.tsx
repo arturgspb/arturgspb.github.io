@@ -42,9 +42,9 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className={'bg-zinc-900 text-site p-8 sm:p-20'}>
+                <div className={'bg-gray-800 text-site p-8 sm:p-20'}>
                     <div className="max-w-4xl mx-auto">
-                        <Box>
+                        <div className={'bg-gray-700 opacity-90 rounded-xl shadow-lg p-8'}>
                             <Text className={'my-2'} color={'white'} align={'center'}>
                                 Руководитель направления разработки в Centra.
                             </Text>
@@ -58,11 +58,11 @@ export default function Home() {
                                 <Link className={'text-purple-500'} href={'https://www.youtube.com/@lets_goto_it'}
                                       target={'_blank'}>YouTube</Link>
                             </Text>
-                        </Box>
+                        </div>
                     </div>
                 </div>
 
-                <div className={'flex gap-2 sm:gap-14 px-14 flex-col'}>
+                <div className={'flex gap-2 sm:gap-14 sm:px-14 flex-col'}>
                     <div className="pt-20 mb-20 px-8 sm:px-0 max-w-4xl mx-auto">
                         <h1 className="uppercase mb-4 font-bold text-black text-4xl sm:text-7xl text-center sm:text-left">Обо
                             мне</h1>
@@ -145,7 +145,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className={'bg-zinc-900 text-site pt-16 sm:p-20'}>
+                <div className={'bg-gray-800 text-site pt-16 sm:pt-20 pb-8'}>
                     <div className="mb-8 px-8 sm:px-0 max-w-4xl mx-auto">
                         <h1 className="uppercase mb-4 font-bold text-white text-4xl sm:text-7xl text-center sm:text-left">Проекты</h1>
                         <Text color={'white'}>Это часть проектов, над которыми я работал в последнее время</Text>
@@ -160,11 +160,14 @@ export default function Home() {
                             со мной</h1>
 
                         <Text align={'center'}>
-                            Пишите мне в{' '}
+                            Обязательно пишите мне в{' '}
                             <Link className={'text-purple-500'} href={'https://t.me/arturgspb'} target={'_blank'}>Телеграм</Link>{' '}
                             или на почту{' '}
-                            <Link className={'text-purple-500'} href={'mailto:arturgspb@gmail.com'} target={'_blank'}>arturgspb@gmail.com</Link>
+                            <Link className={'text-purple-500'} href={'mailto:arturgspb@gmail.com'} target={'_blank'}>arturgspb@gmail.com</Link>,
+                            если есть вопросы, предложения или, например, вы считаете, что на сайт надо добавить какую-то информацию - я буду очень рад.
+
                         </Text>
+
                     </div>
                 </div>
             </div>
