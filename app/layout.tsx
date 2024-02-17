@@ -10,7 +10,6 @@ const InterFont = Inter({
 
 export const metadata: Metadata = {
     title: "Артур Геращенко",
-    description: "Личный сайт",
 };
 
 export default function RootLayout({
