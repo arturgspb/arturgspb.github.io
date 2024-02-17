@@ -1,12 +1,12 @@
 import React, { FC, HTMLAttributeAnchorTarget } from 'react';
-import { IChildrenProps, IRefProps } from "../../common/props";
+import { IChildrenProps } from "../../common/props";
 import Link from "next/link";
 import styled from './Button.module.scss'
 import { buildCssClasses } from "../../common/classesUtils";
 
 type TButtonView = 'main';
 
-export interface IButtonProps extends IRefProps, IChildrenProps {
+export interface IButtonProps extends IChildrenProps {
     view?: TButtonView;
     href: string;
     target?: HTMLAttributeAnchorTarget | undefined;

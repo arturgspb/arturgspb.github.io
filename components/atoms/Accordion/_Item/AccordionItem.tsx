@@ -19,7 +19,7 @@ export interface IAccordionItemProps extends IChildrenProps {
 }
 
 export const AccordionItem: FC<IAccordionItemProps> = (({ title, subtitle, children, externalLink }) => {
-    const {isOpen, handleToggleClick} = useOpen();
+    const { isOpen, handleToggleClick } = useOpen();
 
     const link: IButtonOptionalExceptSalary | undefined = externalLink
         ? { children: 'Перейти на сайт', target: '_blank', ...externalLink }
@@ -35,7 +35,8 @@ export const AccordionItem: FC<IAccordionItemProps> = (({ title, subtitle, child
                             onClick={handleToggleClick}
                     >
                         {title}
-                        {children && <ArrowDown className="w-4 h-4 inline ml-3 opacity-0 group-hover/button:opacity-100 " />}
+                        {children &&
+                        <ArrowDown className="w-4 h-4 inline ml-3 opacity-0 group-hover/button:opacity-100 "/>}
                     </button>
                     <div>
                         <Text color={'white'} size={'base'}>{subtitle}</Text>
@@ -47,7 +48,8 @@ export const AccordionItem: FC<IAccordionItemProps> = (({ title, subtitle, child
                 </div>
             </div>
 
-            {link && <Button {...link} />}
+            {link &&
+            <Button target={link.target} href={link.href} view={link.view}>{link.children}</Button>}
         </div>
     )
 });
