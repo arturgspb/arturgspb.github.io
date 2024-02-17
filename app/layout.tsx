@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { MetrikaScript } from "../components/analytics/metrika";
 // import { Header } from "../components/Header";
 
 const InterFont = Inter({
@@ -23,6 +24,7 @@ export default function RootLayout({
         <div className={'p-4'}>&nbsp;</div>
         {/*<Header/>*/}
         {children}
+        <MetrikaScript />
         </body>
         </html>
     );
