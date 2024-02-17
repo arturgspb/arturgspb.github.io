@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import { Header } from "../components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const InterFont = Inter({
+    subsets: ["latin"],
+    variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
-  title: "Артур Геращенко",
-  description: "Личный сайт",
+    title: "Артур Геращенко",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="ru">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+    return (
+        <html lang="ru">
+        <body className={InterFont.className + ' text-black bg-site'}>
+        <div className={'p-4'}>&nbsp;</div>
+        {/*<Header/>*/}
+        {children}
+        </body>
+        </html>
+    );
 }
