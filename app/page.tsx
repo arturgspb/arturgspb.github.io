@@ -73,12 +73,22 @@ export default function Home() {
                         </Text>
 
                         <Text className={'my-5'}>
+                            <b>Технологии:</b><br />
+                            Указаны технологии, с которыми есть опыт работы от 2х лет.<br />
+                            ЯП: TypeScript, Python, SQL (+plpgsql), Java, JavaScript, PHP.<br />
+                            БД: PostgreSQL, Google BigQuery, Yandex ClickHouse, Redis<br />
+                            Очереди: RabbitMQ<br />
+                            Инфра: Kubernetes, Docker, gRPC, Protobuf, Yandex Cloud (Storage, K8s), GoogleCloud (Storage, BigQuery)
+                        </Text>
+
+
+                        <Text className={'my-5'}>
                             <b>Как разработчик</b> начинал с PHP + MySQL + Vanilla js и выполнял проекты с нуля, а также
                             подключался к уже готовым проектам разной степени зрелости.
                             Застал рассвет jQuery и внедрял его в проекты, потом застал появление AngularJS,
                             затем переписывал проект с него на React.
                             Дважды переводил проекты с MySQL на PostgreSQL (Garpun, AdHands), распиливал PHP монолит
-                            (Garpun) на сервисы Java/Python.
+                            (Garpun) на сервисы Java / Python.
                             На Java и AngularJs (а потом React) реализовал внутреннюю low code платформу (META) для
                             построения корпоративных приложений.
                             Застал рождение gRPC как технологии и переводил сервисы на него.
